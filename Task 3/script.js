@@ -16,13 +16,12 @@ const outputEl = document.getElementById("output");
 const btnEl = document.getElementById("btn");
 
 btnEl.addEventListener("click", () => {
-  document.getElementById("message").textContent = "";
+  outputEl.innerHTML = "";
   makeUserList();
   outputEl.className = "cards";
 });
 
 async function makeUserList() {
-  outputEl.innerHTML = "";
   const resp = await fetch(ENDPOINT);
   const jsData = await resp.json();
   console.log("jsData ===", jsData);

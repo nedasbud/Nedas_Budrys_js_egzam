@@ -65,6 +65,7 @@
   flex-wrap: wrap;
   justify-content: center;
   row-gap: 15px;
+  gap: 15px;
 }
 .card {
   flex-basis: 22%;
@@ -82,4 +83,5 @@
 
 .card img {
   width: 300px;
+  border-radius: 15px;
 }
