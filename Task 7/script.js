@@ -12,11 +12,10 @@ const audi = {
 };
 
 function showObjectKeys(obj) {
-  // 1 variantas su Object klase
-
+  // 1 variantas su Object konstruktorium
   // return Object.keys(obj);
 
-  // 2 variantas
+  // 2 variantas su for...in ciklu
 
   const keys = [];
   for (let key in obj) {
