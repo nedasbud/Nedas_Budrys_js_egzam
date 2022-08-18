@@ -19,7 +19,6 @@ function init() {
 init();
 
 async function makeCarsList() {
-  outputEl.innerHTML = "";
   const resp = await fetch(ENDPOINT);
   const jsData = await resp.json();
   console.log("jsData ===", jsData);
