@@ -28,5 +28,5 @@ function filterAdults(arr) {
   return arr.filter((user) => user.age >= 18);
 }
 
-console.log(filterDogOwers(users));
-console.log(filterAdults(users));
+console.log("Users with a dog array:", filterDogOwers(users));
+console.log("Users that are adult array:", filterAdults(users));
