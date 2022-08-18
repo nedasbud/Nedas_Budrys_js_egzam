@@ -21,15 +21,14 @@ const users = [
 ];
 
 function getUserAverageAge(arr) {
-  const reduceUsers = arr.reduce((total, user) => {
-    return total + user.age;
-  }, 0);
-  return (reduceUsers / arr.length).toFixed(2);
+  return (
+    arr.reduce((total, user) => {
+      return total + user.age;
+    }, 0) / arr.length
+  ).toFixed(2);
 }
 function getUsersNames(arr) {
-  const namesArr = [];
-  arr.forEach((user) => namesArr.push(user.name));
-  return namesArr;
+  return arr.map((user) => user.name);
 }
 
 console.log("Average user age:", getUserAverageAge(users));
