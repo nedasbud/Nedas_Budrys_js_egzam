@@ -1,0 +1,41 @@
+header {
+  position: sticky;
+  top: 0;
+}
+
+nav {
+  display: flex;
+  padding: 12px;
+  background-color: snow;
+}
+
+.left {
+  flex-basis: 30%;
+  text-align: center;
+}
+
+.right {
+  display: flex;
+  flex-basis: 70%;
+  justify-content: space-evenly;
+}
+
+.right ul {
+  display: flex;
+  gap: 25px;
+}
+
+.right li {
+  list-style: none;
+  display: inline-block;
+}
+
+.right li a {
+  text-decoration: none;
+  border-bottom: 1px dashed gray;
+}
+
+footer p {
+  text-align: center;
+  padding: 15px;
+}
